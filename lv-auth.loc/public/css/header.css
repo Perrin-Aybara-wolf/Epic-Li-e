@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Minecraft Seven';
+    src: url('fonts/Minecraft Seven_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Underdog', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a * {
+    cursor: pointer;
+}
+
+body {
+    --foter_bgr_clr: #204547;
+}
+
+.flex-cntr {
+    display: flex;
+    align-items: center;
+}
+
+.shtora {
+    --k_card: 100px;
+
+
+    background-color: #193536d8;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+header {
+    background-color: #275154;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #204547;
+    padding: 10px 20px;
+    color: white;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    /* height: 98px; */
+}
+
+.navbar * {
+    position: relative;
+    z-index: 3;
+}
+
+.navbar+* {
+    position: relative;
+    z-index: 3;
+}
+
+.nav-icons {
+    display: flex;
+    width: 149px;
+    gap: 27px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+}
+
+.logo {
+    height: 71px;
+    width: 92px;
+}
+
+.nav-menu {
+    position: relative;
+    left: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.nav-menu li {
+    margin-right: 26px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-family: Underdog;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.74px;
+    text-align: left;
+    /* height: 100%; */
+
+}
+
+.nav-menu a:hover {
+    /* text-decoration: underline; */
+}
+
+.nav-menu li.active {
+    border-bottom: 3px solid #539AB1;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.currency-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 232px;
+}
+
+.currency-icons img {
+    height: 32px;
+    margin-right: 5px;
+}
+
+.currency-icons span {
+    /* height: 32px; */
+    margin-right: auto;
+    font-family: Underdog;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.74px;
+    text-align: left;
+    position: relative;
+
+}
+
+.header-background {
+    background-image: url('image/Wireframe\ -\ 3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.porfie-fone {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+    background: #152D34;
+
+}
+
+.porfie-fone>img {
+    position: relative;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 85%;
+}
+
+.profile-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+}
+
+.inv-box {
+    align-self: end;
+    margin: 0 10px;
+}
+
+.inv-box img {
+    width: 35px;
+    height: 35px;
+}
+
+.user-info {
+    margin-left: 20px;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Underdog', Arial, sans-serif;
+}
+
+.user-email {
+    font-size: 18px;
+    color: #ccc;
+    font-family: 'Underdog', Arial, sans-serif;
+}
+
+.user-progress {
+    width: 312px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.progress-grid {
+    display: grid;
+    grid-template: 30px 30px/ 40px 272px;
+}
+
+.progress-grid>img {
+    width: 30px;
+    height: 30px;
+}
+
+.progress-line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 98.5%;
+}
+
+.progress-bar {
+    width: 100%;
+    margin: auto 0;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-name: progress;
+}
+
+.progress-bar+img {
+    position: absolute;
+    z-index: 2;
+    left: -3px;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
+
+.progress-bar.red {
+    background-color: red;
+}
+
+.progress-bar.blue {
+    background-color: blue;
+}
+
+.header-text {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Underdog', Arial, sans-serif;
+}
+
+.header-text h2 {
+    color: #ffffff !important;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.header-text button {
+    padding: 10px 20px;
+    background-color: #437484;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Underdog', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.81px;
+    text-align: center;
+
+}
+
+.header-text button:hover {
+    background-color: #45a049;
+}
+
+.character-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/Ринок.Кузня.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(43, 58, 63, 0.8);
+
+}
+
+.character-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character-container img:first-child {
+    position: unset;
+    width: 64%;
+    height: 64%;
+}
+
+
+
+
+#head {
+    z-index: 4;
+}
+
+#body {
+    z-index: 3;
+}
+
+#legs {
+    z-index: 1;
+}
+
+#foots {
+    z-index: 4;
+}
+
+#l_arm {
+    z-index: 4;
+}
+
+#r_arm {
+    z-index: 4;
+}
+
+.nasl {
+    display: block !important;
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    z-index: 0;
+}
+
+nav .nasl {
+    right: 0;
+    top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.character-room {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 20px;
+    /* background: #152D34; */
+
+
+    overflow: hidden;
+    background-color: rgba(43, 58, 63, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.character-room img:first-child {
+    position: relative;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 85%;
+}
+
+.character-room img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 6%;
+}
+
+.room-inventory {
+    position: fixed;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.header-background .room-inventory {
+    animation-name: to_inventory;
+}
+
+body>.room-inventory {
+    animation-name: from_inventory;
+}
+
+@keyframes to_inventory {
+    from {
+        width: 160px;
+        height: 160px;
+        left: 0;
+        top: 13%;
+        z-index: 1;
+    }
+
+    to {
+        width: 500px;
+        height: 500px;
+        left: 54.7%;
+        top: 15%;
+        z-index: 1000;
+    }
+}
+
+@keyframes from_inventory {
+    to {
+        width: 160px;
+        height: 160px;
+        left: 0;
+        top: 15%;
+        z-index: 1;
+    }
+
+    from {
+        width: 500px;
+        height: 500px;
+        left: 54.7%;
+        top: 11%;
+        z-index: 1000;
+    }
+}
+
+.box_animated {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.cloud {
+    position: fixed;
+    /* width: 1032px;
+    height: 520px; */
+
+    width: 100vw;
+    height: 100vh;
+
+    /* background-color: black; */
+    /* border: 3px dashed red; */
+    /* background: url('https://s3-alpha-sig.figma.com/img/7093/0f45/bba1a9c9d69493c7d06df5a7aeef3a7d?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kR2p-q-8AwL-ZYBN4PsEZc~H9GeFzCC8SRafCGd4i4xXqjS8dnlA6UB~JWt0zR89zlUxjv6NcTwWCOxBtq94yFYxJWPHw2wgZm7vNr-cpqr4pPb4XG~jkO10Nq6MVLFM~M9CYC2mlGpXg0GM4lKiD6xAjGShkHHwYyCOgqSZv8Fxm7CeTcMma8Ev316Rxx7ucDVwuYJ-89U2uMGdwEEsT34eg1X4jSAbi4EzMegGWL3XbBjeFi11xoKidLFuy6ef7tT2voaFp~UffeCjrXQW7zyQ2BRCtKV~blqxogf8P86er2eC3tMNwuVG2k4VHw-S9J5LtsAJTB8WQ3SQdipScg__') repeat-x; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;
+}
+
+.cloud.left {
+    left: -50vw;
+}
+
+.cloud.right {
+    right: -50vw;
+}
+
+/* #cloud-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  } */

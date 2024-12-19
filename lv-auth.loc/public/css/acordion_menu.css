@@ -1,0 +1,124 @@
+.accordion-button {
+    cursor: pointer;
+    transition: 0.4s;
+    width: unset !important;
+}
+
+.menu-container {
+    display: none;
+    background-color: #366e6c;
+    width: 200px;
+    height: 400px;
+    border-radius: 0 0 30px 30px;
+    text-align: center;
+    color: #fff;
+    /* border: 5px solid #20272c; */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.menu-container.show {
+    display: block;
+}
+
+.menu_ {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 13px;
+}
+
+.menu_>li {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+}
+
+.menu_>li:nth-child(-4n+7) {
+    margin-top: 0;
+}
+
+.menu_>li:nth-child(-4n+7)+li {
+    margin-top: 0;
+}
+
+.menu_ a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.menu-photo {
+    width: 160px;
+    height: auto;
+    /* margin: 3px 0; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-section {
+    padding-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 14px;
+    text-align: center;
+    width: 160px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    line-height: 16px;
+}
+
+.reminder {
+    position: relative;
+    display: block;
+}
+
+.reminder img {
+    width: 114px;
+    height: 56px;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+    left: 10px;
+    top: 8px;
+}
+
+.reminder-text {
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    width: 84px;
+    /* transform: translate(-50%, -50%); */
+    font-family: 'Minecraft Seven', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13.75px;
+    text-align: center;
+    color: #543927;
+    pointer-events: none;
+}
+
+.menu_>.bottom {
+    width: 57px;
+    height: 100px;
+    position: absolute;
+    bottom: -1px;
+    left: 60%;
+}
+
+.bottom>img {
+    width: 57px;
+    height: 100px;
+    position: absolute;
+    bottom: -1px;
+    left: 60%;
+}

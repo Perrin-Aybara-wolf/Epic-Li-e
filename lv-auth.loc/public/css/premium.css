@@ -1,0 +1,201 @@
+body{
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #204547;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.left-side-content {
+    /* flex: 1; */
+    padding: 20px;
+    /* margin-right: 50px; */
+}
+
+.left-side-content h2 {
+    font-size: 28px;
+    color: #204547;
+    text-align: center;
+    width: 380px;
+    position: relative;
+    left: 90px;
+}
+
+.benefits-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.benefits-list img {
+    max-width: 107.67px;
+    max-height: 107.67px;
+    margin-right: 10px;
+}
+
+.benefits-list p {
+    font-size: 20px;
+    color: #204547;
+    margin: 0;
+    line-height: 23.12px;
+    width: 411px;
+}
+
+.box-container {
+    width: 849px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.method-top-image {
+    width: 849px;
+    height: 134px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -62px;
+}
+
+.method-bottom-image {
+    max-width: 849px;
+    height: 134px;
+    background-size: cover;
+    background-position: center;
+    margin-top: -28px;
+    object-fit: contain;
+}
+
+.method-right-image {
+    width: 871px;
+    height: 131px;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    margin-bottom: -293px;
+    transform: rotate(90deg);
+    right: 287px;
+    position: relative;
+    bottom: 193px;
+    z-index: -2;
+}
+
+.method-left-image {
+    width: 876px;
+    height: 134px;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    transform: rotate(90deg);
+    left: 261px;
+    top: -35px;
+}
+
+.payment-options {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-item {
+    margin-bottom: 20px;
+}
+
+.payment-image {
+    background-size: cover;
+    background-position: center;
+    width: 667px;
+    height: 117px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.payment-image p {
+    margin: 0;
+    font-size: 20px;
+    color: #204547;
+}
+
+.payment-method-section {
+    text-align: center;
+    position: relative;
+}
+
+.payment-method-section h3 {
+    font-size: 28px;
+    color: #204547;
+    line-height: 32.37px;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.method {
+    width: 436px;
+    line-height: 27.74px;
+    height: 60px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #437484;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.method:hover {
+    background-color: #4682B4;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.footer p {
+    font-size: 20px;
+    color: #204547;
+    line-height: 23.12px;
+}
+
+.gift-link {
+    font-size: 20px;
+    color: #1A393B;
+    line-height: 23.12px;
+    text-decoration: none;
+}
+
+.gift-link:hover {
+    text-decoration: underline;
+}

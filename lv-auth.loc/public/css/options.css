@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+.settings-container {
+    max-width: 1440px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    color: #065f46;
+    margin-bottom: 20px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+.grid-layout button {
+    padding: 5px 10px;
+    border: 1px solid #065f46;
+    background-color: #fff;
+    color: #065f46;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+.grid-layout button:hover {
+    background-color: #065f46;
+    color: #fff;
+}
+
+.grid-layout h3 {
+    grid-column: span 3;
+    font-size: 18px;
+    color: #004f3a;
+    margin: 0;
+}
+
+.grid-layout p, .grid-layout span {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+.grid-layout p {
+    grid-column: 1;
+    margin-right: auto;
+}
+.grid-layout span {
+    grid-column: 2;
+    margin: 0 auto;
+}
+
+
+.edit-btn {
+    max-width: 143px;
+    position: relative;
+    /* left: 153px; */
+}
+
+.info-btn {
+    max-width: 218px;
+    position: relative;
+    /* right: -79px; */
+}
+
+.connect-btn {
+    max-width: 143px;
+    position: relative;
+    /* left: 153px; */
+}

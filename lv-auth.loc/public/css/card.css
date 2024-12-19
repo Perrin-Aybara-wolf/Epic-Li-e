@@ -1,0 +1,202 @@
+.shtora {
+    --k_card: 50px;
+
+
+    background-color: #19353680;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    overflow-y: scroll;
+}
+
+.card_body {
+    width: calc(var(--k_card)*6/100*88);
+    /* height: calc(var(--k_card)*9); */
+    border-radius: calc(var(--k_card)/100*30);
+    background-color: #FFFFFF;
+    padding: 0 calc(var(--k_card)*6/100*6) 40px;
+    margin: 86px auto;
+    position: relative;
+    top: 63px;
+}
+
+.card_body h2 {
+    font-family: Underdog;
+    font-size: calc(var(--k_card)/100*24);
+    font-weight: 400;
+    line-height: 27.74px;
+    text-align: left;
+    color: #275154;
+
+}
+.card_body div{
+    height: calc(var(--k_card)/100*70);
+}
+.card_body .grid_grp{
+    height: calc(var(--k_card)*1.4);
+    display: grid;
+    grid-template: 20px repeat(2, calc(var(--k_card)/100*40))/ 1fr 1fr;
+    row-gap: 7%;
+    column-gap: 3%;
+    width: 100%;
+    justify-content: space-between;
+}
+.grid_grp input{
+    height: calc(var(--k_card)/100*40);
+}
+
+.form-crd{
+    /* flex-wrap: wrap; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-gap: calc(var(--k_card)/10);
+}
+.form-crd>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.form-crd label, .form-crd p, .form-crd div{
+    font-family: Underdog;
+    font-size: calc(var(--k_card)/5);
+    font-weight: 400;
+    align-self: flex-start;
+    color: #275154;
+    
+}
+p{
+    margin: 0;
+}
+
+.form-crd input, .form-crd textarea, .form-crd select{
+    width: 100%;
+    height: 100%;
+    border-radius: calc(var(--k_card)/100*10);
+    border: 0.1px solid #0000003d;
+    box-shadow: 2px 4px 5px 1px #00000030;
+    font-family: Underdog;
+    font-size: calc(var(--k_card)/5);
+    font-weight: 400;
+    line-height: 23.12px;
+    text-align: left;
+    color: #2751547d;
+    position: relative;
+
+    text-indent: 3%;
+    line-height: 40px;
+}
+
+select{
+    color: #000000;
+}
+
+input::placeholder, textarea::placeholder{
+    text-indent: 3%;
+    line-height:40px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background-repeat:  no-repeat;
+    width: 25px;
+    /* height: 25px; */
+    border-width: thin
+}
+
+
+.card_body input[type="date"]::-webkit-calendar-picker-indicator,
+.card_body input[type="time"]::-webkit-calendar-picker-indicator {
+    background-size: 20px;
+    background-position: center;
+    position: absolute;
+    background-color: #275154;
+    width: 40px;
+    /* height: 25px; */
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#fdate_tsk::-webkit-calendar-picker-indicator, 
+#ftime_tsk::-webkit-calendar-picker-indicator {
+    border-radius: 0 10px 10px 0;
+    background-position: center;
+    /* height: 47.06px; */
+}
+
+#fdate_tsk::-webkit-calendar-picker-indicator {
+    background-image: var(--icon_kalendar);
+    right: 0;
+}
+
+#ftime_tsk::-webkit-calendar-picker-indicator {
+    background-image: var(--icon_clock);
+    right: -.9%;
+}
+
+#sdate_tsk::-webkit-calendar-picker-indicator, 
+#stime_tsk::-webkit-calendar-picker-indicator {
+    background-position: center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#sdate_tsk::-webkit-calendar-picker-indicator {
+    left: 0;
+    background-image: var(--icon_kalendar);
+}
+
+#stime_tsk::-webkit-calendar-picker-indicator {
+    left: -5.05%;
+    background-image: var(--icon_clock);
+}
+
+#fdate_tsk::-webkit-datetime-edit {
+    position: relative;
+    left: 20%;
+}
+#ftime_tsk::-webkit-datetime-edit {
+    position: relative;
+    left: 45%;
+}
+
+#sdate_tsk::-webkit-datetime-edit {
+    position: relative;
+    left: 25%;
+}
+#stime_tsk::-webkit-datetime-edit {
+    position: relative;
+    left: 25%;
+}
+
+#rep_cal{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 40px;
+    width: 100%;
+}
+#rep_cal>div{
+    width: calc(var(--k_card)*6/100*12.48);
+    height: calc(var(--k_card)*6/100*6.48);
+    border-radius: calc(var(--k_card)/100*6);
+    border: 1px solid #FFFFFF;
+    background-color: #275154;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+}

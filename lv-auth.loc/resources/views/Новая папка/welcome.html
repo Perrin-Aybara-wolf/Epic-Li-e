@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="welcome.css"> -->
+    <style>
+        :root {
+            --turquoise-color: #1abc9c;
+            --background-color: #22444F;
+            ;
+            --text-color: #ecf0f1;
+            --button-hover-bg: rgba(236, 240, 241, 0.1);
+            --input-bg: #4F8B96;
+            --input-placeholder-color: #A1C5CC;
+            --input-hover-bg: #3C7782;
+            --button-bg: #5098A6;
+            --button-hover-bg: #3C7782;
+            --k: 100px;
+        }
+
+        .flex-cntr {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body {
+            font-family: 'Underdog', sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            max-width: calc(var(--k)*14.4);
+            /* margin: 0 auto; */
+        }
+
+        .progress-bar {
+            display: flex;
+            width: 500px;
+            height: 70px;
+            background-color: #538FA3;
+            /* justify-content: center; */
+            border-radius: 3px;
+            gap: 3px;
+            margin: calc(var(--k)*0.2) auto;
+
+        }
+
+        .line {
+            width: 10px;
+            height: 98%;
+            background-color: #00ff37;
+            border-radius: calc(var(--k)*0.08);
+            border: 1px solid black;
+            /* justify-content: center; */
+        }
+
+        h2{
+            position: relative;
+            align-self: center;
+            width: 0;
+            left: 43%;
+        }
+    </style>
+</head>
+
+<body class="flex-cntr">
+    <div class="progress-bar">
+        <h2>68%</h2>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</body>
+
+</html>

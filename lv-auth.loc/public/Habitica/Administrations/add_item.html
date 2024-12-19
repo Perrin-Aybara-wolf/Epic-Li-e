@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_foto</title>
+
+<style>
+    div{
+        width: 400px;
+        border: 1px dashed black;
+    }
+    form{
+        padding: 2px;
+    }
+</style>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div>
+        <form action="add_items.php" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
+            <input type="text" name="name" value="Введите имя предмета" size="30" />
+            <textarea style="width: 90%;" required name="description" rows="4" cols="50">Введите описание предмета</textarea>
+            <label for="price_gold">Стоимость в монетах</label>
+            <input type="number" name="price_gold" value="0" min="0"/>
+            <label for="price_diamond">Стоимость в диамантах</label>
+            <input type="number" name="price_diamond" value="0"  min="0"/>
+            <input type="file" name="img" value="Выберите изображение" />
+            <input type="submit" value="Вперед" />
+        </form>
+    </div>
+</body>
+
+</html>
